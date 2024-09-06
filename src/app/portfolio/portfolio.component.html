@@ -1,0 +1,59 @@
+<div class="shadow-sm">
+  <div class="background-section">
+    <div class="bg-custom p-5 rounded">
+      <div class="text-center">
+        <h1 class="display-4">Hi, I'm Teddy Kibuthu</h1>
+        <h3>A Software Engineer</h3>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar-expand-md border-bottom mt-3">
+        <div class="container">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a href="home" class="nav-link text-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio" class="nav-link text-secondary">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="resume" class="nav-link text-secondary">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact" class="nav-link text-secondary">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Portfolio Cards Section -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let project of projects">
+          <div class="card portfolio-card bounce-in-top">
+            <img
+              src="{{project.image}}"
+              class="card-img-top"
+              alt="Project Image" height="256px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{project.title}}</h5>
+              <p class="card-text">
+                {{project.description}}
+              </p>
+              <div class="d-flex justify-content-between">
+                <a href="{{project.github}}" class="btn btn-outline-light"
+                  >GitHub</a
+                >
+                <a href="{{project.demo}}" class="btn btn-outline-primary"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

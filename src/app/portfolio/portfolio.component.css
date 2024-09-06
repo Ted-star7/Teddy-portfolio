@@ -1,0 +1,119 @@
+/* Background Section */
+.background-section {
+  background: url('/assets/sunset-blue.jpg') no-repeat center center;
+  background-size: cover;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Custom Section */
+.bg-custom {
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+h1,
+h3 {
+  color: white;
+  margin: 0;
+}
+
+/* Card Styling */
+.portfolio-card {
+  background-color: #1e3a5f;
+  color: #f2f2f2;
+  border: 2px solid #f26716;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+ 
+}
+
+.card-title {
+  color: #f26716;
+ 
+}
+
+.card-text {
+  color: #f2f2f2;
+  
+}
+
+.btn-outline-light {
+  border-color: #90bf2a;
+ 
+  color: #90bf2a;
+}
+
+.btn-outline-light:hover {
+  background-color: #90bf2a;
+  color: white;
+}
+
+.btn-outline-primary {
+  border-color: #f26716;
+  color: #f26716;
+}
+
+.btn-outline-primary:hover {
+  background-color: #f26716;
+  color: white;
+}
+.bounce-in-top {
+  animation: bounceInTop 5s ease-out forwards;
+}
+
+@keyframes bounceInTop {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .portfolio-card {
+    margin-bottom: 1rem;
+  }
+}

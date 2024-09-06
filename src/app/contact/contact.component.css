@@ -1,0 +1,48 @@
+/* Background Section */
+.background-section {
+  background: url('/assets/sunset-blue.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom Section */
+.bg-custom {
+  /* background-color: #010326; */
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: -30%;
+
+}
+
+h1,
+h3 {
+  color: white;
+  margin: 0;
+}
+
+/* Navigation Styling */
+.navbar-expand-md {
+  background-color: #010326;
+}
+
+.nav {
+  padding: 0;
+
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  padding: 0.5rem 1rem;
+
+}
+
+.nav-link:hover {
+  color: #90BF2A;
+}
