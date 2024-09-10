@@ -2,11 +2,12 @@
 .background-section {
   background: url('/assets/sunset-blue.jpg') no-repeat center center;
   background-size: cover;
-  height: 260vh;
+  height: 220vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  overflow-x: hidden;
 }
 
 /* Custom Section */
@@ -79,6 +80,7 @@ h3 {
 .profile-details p {
   font-size: 1rem;
 }
+
 /* Bouncy effect for "Get To Know" */
 .bounce-in-top {
   animation: bounceInTop 3s ease-out forwards;
@@ -148,9 +150,9 @@ h3 {
   }
 }
 
-button{
+/* Button */
+button {
   background-color: blueviolet;
-  /* color: purple; */
 }
 
 /* What I Can Do Section */
@@ -183,7 +185,7 @@ button{
 
 .skill-box i {
   font-size: 2rem;
-  color: #90BF2A;
+  color: burlywood;
 }
 
 .skill-box p {
@@ -198,7 +200,7 @@ button{
 
 /* Button Styling */
 .btn-primary {
-  background-color: #90BF2A;
+  background-color: blueviolet;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
@@ -210,4 +212,49 @@ button{
 .btn-primary:hover {
   background-color: #010326;
   transform: translateY(-5px);
+}
+
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+.background-section{
+  height: 400vh;
+}
+  /* Adjust the profile section */
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-details {
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  /* Adjust navigation */
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+
+  /* Adjust the skills grid */
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 992px) {
+  .profile-image-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }

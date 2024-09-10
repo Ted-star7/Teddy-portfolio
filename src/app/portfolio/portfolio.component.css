@@ -6,13 +6,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  /* Ensure the background covers the entire width */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
 }
 
 /* Custom Section */
 .bg-custom {
   padding: 2rem 1rem;
   border-radius: 0.5rem;
+  max-width: 100%;
 }
+
 h1,
 h3 {
   color: white;
@@ -25,27 +31,24 @@ h3 {
   color: #f2f2f2;
   border: 2px solid #f26716;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 100%;
 }
 
 .portfolio-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
- 
 }
 
 .card-title {
   color: #f26716;
- 
 }
 
 .card-text {
   color: #f2f2f2;
-  
 }
 
 .btn-outline-light {
   border-color: #90bf2a;
- 
   color: #90bf2a;
 }
 
@@ -63,6 +66,8 @@ h3 {
   background-color: #f26716;
   color: white;
 }
+
+/* Animation */
 .bounce-in-top {
   animation: bounceInTop 5s ease-out forwards;
 }
@@ -116,4 +121,34 @@ h3 {
   .portfolio-card {
     margin-bottom: 1rem;
   }
+
+  .background-section {
+    height: auto;
+    /* Adjust height for smaller screens */
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    /* Stack skills vertically on small screens */
+  }
+
+  .btn-outline-light,
+  .btn-outline-primary {
+    width: 100%;
+    /* Full width buttons for mobile */
+    margin-bottom: 1rem;
+  }
+}
+
+/* General styles to avoid horizontal scrolling */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
 }
