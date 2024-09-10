@@ -6,10 +6,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 
 export const routes: Routes = [
-{path: '', component: HeaderComponent},
-{path: 'home', component: HomeComponent},
-{path: 'contact', component: ContactComponent},
-{path: 'portfolio', component: PortfolioComponent},
-{path: 'resume', component: ResumeComponent},
-{path: '**', component: HomeComponent, pathMatch: 'full'}
+  { path: '', component: HomeComponent }, // Root path opens HomeComponent
+  { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'resume', component: ResumeComponent },
+  { path: '**', component: HomeComponent, pathMatch: 'full' } // Wildcard route
 ];

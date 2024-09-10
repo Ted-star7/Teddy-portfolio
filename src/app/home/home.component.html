@@ -11,16 +11,16 @@
         <div class="container">
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a href="" class="nav-link text-secondary">Home</a>
+              <a href="home" class="nav-link text-secondary">Home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link text-secondary">Portfolio</a>
+              <a href="portfolio" class="nav-link text-secondary">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link text-secondary">Resume</a>
+              <a href="resume" class="nav-link text-secondary">Resume</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link text-secondary">Contact</a>
+              <a href="contact" class="nav-link text-secondary">Contact</a>
             </li>
           </ul>
         </div>
@@ -42,13 +42,77 @@
             I am a Software Engineer who enjoys solving problems by creating
             scalable web applications with clean and user-friendly interfaces.
             When I'm not coding, you can find me watching football, a big fan,of
-            Manchester City or immersed in a good novel. I pride myself on being
-            a meticulous coder with experience in Angular, Java, JavaScript.
-            Let's build something amazing together!
+            Manchester City or immersed in a good novel. I strive for precision
+            and accuracy in my coding. with experience in Angular, Java,
+            JavaScript. Let's build something amazing together!
           </p>
-          <br>
-          <button type="button" class="btn btn-primary">Let's engage</button>
+          <br />
+          <button type="button" class="btn btn-primary" (click)="goToContact()">
+            Let's engage
+          </button>
         </div>
+      </div>
+
+      <!-- What I Can Do Section -->
+      <div class="what-i-can-do">
+        <h2 class="section-title">What I Can Do</h2>
+        <div class="skills-container">
+          <div class="skill-box">
+            <i class="fa fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-css3"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-type-script"></i>
+            <p>TypeScript</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-node"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-angular"></i>
+            <p>Angular</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-next"></i>
+            <p>Next.js</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-tailwind"></i>
+            <p>TailwindCSS</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-redux"></i>
+            <p>Redux</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-github"></i>
+            <p>GitHub</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-mongodb"></i>
+            <p>MongoDB</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa fa-postgresql"></i>
+            <p>PostgreSQL</p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="goToContact()">
+          Contact Me
+        </button>
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
 .background-section {
   background: url('/assets/sunset-blue.jpg') no-repeat center center;
   background-size: cover;
-  height: 200vh;
+  height: 260vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,4 +151,63 @@ h3 {
 button{
   background-color: blueviolet;
   /* color: purple; */
+}
+
+/* What I Can Do Section */
+.what-i-can-do {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f2f2f2;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.skill-box {
+  background-color: #ffffff;
+  border: 2px solid #90BF2A;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.skill-box i {
+  font-size: 2rem;
+  color: #90BF2A;
+}
+
+.skill-box p {
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  background-color: #f9f9f9;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #90BF2A;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #010326;
+  transform: translateY(-5px);
 }
