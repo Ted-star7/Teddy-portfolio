@@ -2,7 +2,7 @@
 .background-section {
   background: url('/assets/sunset-blue.jpg') no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@ h3 {
 }
 
 .profile-image-container:hover {
-  transform: rotate(15deg);
+  transform: rotate(45deg);
 }
 
 .profile-details {

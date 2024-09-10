@@ -1,0 +1,149 @@
+/* Background Section */
+.background-section {
+  background: url('/assets/sunset-blue.jpg') no-repeat center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+/* Custom Section */
+.bg-custom {
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: -50px;
+  max-width: 900px;
+ 
+}
+
+
+h1,
+h3 {
+  color: white;
+  margin: 0;
+}
+
+/* Navigation Styling */
+.navbar-expand-md {
+  background-color: #010326;
+}
+
+.nav {
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: #90BF2A;
+}
+
+/* Custom Button Styling */
+.btn-custom {
+  background-color: goldenrod;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #010326;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Collapse Styling */
+.collapse {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collapse-header {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.collapse-body {
+  padding: 1rem;
+}
+
+/* Skills Section Styling */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-category {
+  flex: 1 1 calc(33.333% - 1rem);
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h4 {
+  margin-top: 0;
+}
+
+
+.professional-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.professional-item {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Button Styling */
+.accordion-button {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 20px 20px;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+  background-color: #010326;
+}
+
+.accordion-body {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #90BF2A;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Spacing between accordion items */
+.accordion-item {
+  margin-bottom: 1rem;
+  
+}

@@ -2,22 +2,25 @@
 .background-section {
   background: url('/assets/sunset-blue.jpg') no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 250vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 /* Custom Section */
 .bg-custom {
-  /* background-color: #010326; */
   padding: 2rem 1rem;
   border-radius: 0.5rem;
-  margin-top: -30%;
+  margin-top: -400px;
 
 }
 
+/* Navigation Styling */
 h1,
+h2,
 h3 {
   color: white;
   margin: 0;
@@ -45,4 +48,77 @@ h3 {
 
 .nav-link:hover {
   color: #90BF2A;
+}
+
+/* Contact Section Styling */
+.contact-section {
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  width: 1000px;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-icon-box {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon-box i {
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact-icon-box p {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.contact-icon-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-icon-box a:hover {
+  text-decoration: underline;
+}
+
+/* Form Styling */
+.form-control {
+  border-radius: 10px;
+}
+label{
+  color: whitesmoke;
+}
+.btn-custom {
+  background-color: goldenrod;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #010326;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
