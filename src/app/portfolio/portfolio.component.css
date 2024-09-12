@@ -7,9 +7,8 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  /* Ensure the background covers the entire width */
   overflow-x: hidden;
-  /* Prevent horizontal scrolling */
+  
 }
 
 /* Custom Section */
@@ -67,7 +66,7 @@ h3 {
   color: white;
 }
 
-/* Animation */
+
 .bounce-in-top {
   animation: bounceInTop 5s ease-out forwards;
 }
@@ -124,31 +123,16 @@ h3 {
 
   .background-section {
     height: auto;
-    /* Adjust height for smaller screens */
+  
   }
 
   .skills-container {
     grid-template-columns: 1fr;
-    /* Stack skills vertically on small screens */
   }
 
   .btn-outline-light,
   .btn-outline-primary {
     width: 100%;
-    /* Full width buttons for mobile */
     margin-bottom: 1rem;
   }
-}
-
-/* General styles to avoid horizontal scrolling */
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-html {
-  width: 100%;
-  overflow-x: hidden;
 }

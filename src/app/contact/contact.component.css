@@ -140,14 +140,12 @@ label {
   .contact-icons,
   .form-control {
     width: 100%;
-    /* Full width on mobile */
     margin-bottom: 2rem;
   }
 
   .btn-custom {
     width: 100%;
-    /* margin-top: -500vh; */
-    /* Full width button on mobile */
+   
   }
 }
 

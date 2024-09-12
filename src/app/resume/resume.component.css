@@ -18,7 +18,7 @@
   margin-top: -50px;
   max-width: 900px;
   width: 100%;
-  /* Full width for responsiveness */
+  
 }
 
 h1,
@@ -151,9 +151,10 @@ h3 {
 /* Responsive styling */
 @media (max-width: 768px) {
   .bg-custom {
-    margin-top: 0;
+    margin-top: -500px;
     padding: 1rem;
     width: 100%;
+    overflow-y: visible;
   }
 
   .skills-container {
@@ -162,7 +163,6 @@ h3 {
 
   .skill-category {
     flex: 1 1 100%;
-    /* Full width on mobile */
     margin-bottom: 1rem;
   }
 
@@ -172,7 +172,6 @@ h3 {
 
   .btn-custom {
     width: 100%;
-    /* Full width button on mobile */
     padding: 10px;
   }
 
@@ -182,15 +181,3 @@ h3 {
   }
 }
 
-/* General styles to avoid horizontal scrolling */
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-html {
-  width: 100%;
-  overflow-x: hidden;
-}
