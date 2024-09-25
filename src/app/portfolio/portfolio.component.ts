@@ -19,7 +19,7 @@ export class PortfolioComponent {
       title: 'Smart Invest',
       description: 'Created an investment Web App for investors ',
       image: 'assets/Smartinvest.png',
-      github: 'https://github.com/teddy/project1',
+      github: 'https://github.com/Ted-star7/InvestmentWeb',
       demo: 'https://demo.com/project1',
     },
     {
@@ -27,14 +27,14 @@ export class PortfolioComponent {
       description: 'I developed a UI/UX Website.',
       image: 'assets/Architecture.png',
       github: 'https://github.com/teddy/project2',
-      demo: 'https://demo.com/project2',
+      demo: 'https://www.figma.com/proto/iBLJlrDX6D1p46sSA2iq6k/Architecture?node-id=2-153&node-type=canvas&t=2qL4i6q6OtavswH0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
     },
     {
       title: 'School Admin Portal',
       description: 'A School Portal to automate work.',
       image: 'assets/School Portal.png',
-      github: 'https://github.com/teddy/project2',
-      demo: 'https://demo.com/project2',
+      github: 'https://github.com/Ted-star7/School-portal',
+      demo: 'https://heritageschoolleadership.vercel.app/',
     },
     {
       title: 'Project 4',

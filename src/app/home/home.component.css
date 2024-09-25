@@ -17,11 +17,11 @@
   margin-top: -0.5%;
   width: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 h1,
-h3 {
+h3,
+h4 {
   color: white;
   margin: 0;
 }
@@ -131,12 +131,10 @@ h3 {
   }
 }
 
-
 .slide-in-right {
   animation: slideInRight 7s ease-out forwards;
   animation-iteration-count: infinite;
   color: blueviolet;
-  
 }
 
 @keyframes slideInRight {
@@ -150,7 +148,6 @@ h3 {
     opacity: 1;
   }
 }
-
 
 button {
   background-color: blueviolet;
@@ -174,53 +171,117 @@ button {
   gap: 1rem;
 }
 
-.skill-box {
-  background-color: #ffffff;
-  border: 2px solid #90BF2A;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+.skill-category {
+  margin-bottom: 2rem;
 }
 
-.skill-box i {
-  font-size: 2rem;
-  color: burlywood;
-}
-
-.skill-box p {
-  margin-top: 0.5rem;
-  color: #333;
-}
-
-.skill-box:hover {
-  transform: translateY(-5px);
-  background-color: #f9f9f9;
-}
-
-
-.btn-primary {
-  background-color: blueviolet;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  font-size: 1rem;
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
   color: white;
-  transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn-primary:hover {
-  background-color: #010326;
-  transform: translateY(-5px);
+.skill-title {
+  flex: 1;
+  font-weight: bold;
+  color: green;
 }
 
+.progress-bar {
+  flex: 2;
+  background-color: #333;
+  height: 10px;
+  border-radius: 5px;
+  margin: 0 1rem;
+  position: relative;
+}
 
+.progress {
+  background-color: blueviolet;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.percentage {
+  flex: 0.5;
+  font-weight: bold;
+}
+/* Progress Bar Animation */
+@keyframes progress-animation {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: var(--progress-value);
+  }
+}
+
+.progress-bar .progress {
+  background-color: blueviolet;
+  height: 100%;
+  border-radius: 5px;
+  animation: progress-animation 2s ease-in-out forwards;
+}
+
+/* Slide-in Animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.what-i-can-do {
+  animation: slideInLeft 1.5s ease-in-out forwards;
+}
+
+/* Interests Section Styling */
+.interests-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #f2f2f2;
+}
+
+.interests-section h3 {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+}
+
+.interests-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.interests-list li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.interests-list li i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: blueviolet;
+}
 /* Responsive adjustments for mobile screens */
 @media (max-width: 768px) {
-.background-section{
-  height: 450vh;
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .background-section {
+    height: 450vh;
+  }
 
   .profile-section {
     flex-direction: column;
@@ -237,7 +298,7 @@ button {
     margin-top: 1.5rem;
   }
 
- 
+
   .nav-item {
     margin: 0.5rem 0;
   }
