@@ -37,6 +37,7 @@ h4 {
 
 .nav-link {
   color: #f2f2f2;
+  font-weight: 600;
   padding: 0.5rem 1rem;
 }
 
@@ -204,6 +205,7 @@ button {
   border-radius: 5px;
 }
 
+
 .percentage {
   flex: 0.5;
   font-weight: bold;
@@ -223,7 +225,9 @@ button {
   background-color: blueviolet;
   height: 100%;
   border-radius: 5px;
-  animation: progress-animation 2s ease-in-out forwards;
+  width: 0;
+  transition: width 2s ease-in-out;
+  /* Smooth animation */
 }
 
 /* Slide-in Animation */

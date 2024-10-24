@@ -8,7 +8,6 @@
   justify-content: center;
   width: 100%;
   overflow-x: hidden;
-  
 }
 
 /* Custom Section */
@@ -16,6 +15,24 @@
   padding: 2rem 1rem;
   border-radius: 0.5rem;
   max-width: 100%;
+}
+/* Navigation Styling */
+.navbar-expand-md {
+  background-color: transparent;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: #90BF2A;
 }
 
 h1,
