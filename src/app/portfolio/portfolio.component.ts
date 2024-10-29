@@ -37,11 +37,11 @@ export class PortfolioComponent {
       demo: 'https://heritageschoolleadership.vercel.app/',
     },
     {
-      title: 'Project 4',
-      description: 'A description of project 2.',
-      image: 'assets/P4.jpg',
-      github: 'https://github.com/teddy/project2',
-      demo: 'https://demo.com/project2',
+      title:'Token Resell',
+      description: 'A secure and scalable token-based solutions.',
+      image: 'assets/Token.png',
+      github: 'https://github.com/Ted-star7/Token-resell',
+      demo: 'https://token-resell.vercel.app/',
     },
     {
       title: 'Project 5',
