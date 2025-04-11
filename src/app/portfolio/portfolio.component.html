@@ -22,7 +22,7 @@
     <div class="filter-options">
       <button class="filter-btn active" (click)="filterProjects('all')">All Projects</button>
       <button class="filter-btn" (click)="filterProjects('web')">Web Applications</button>
-      <!-- <button class="filter-btn" (click)="filterProjects('ui')">UI/UX Designs</button> -->
+      <button class="filter-btn" (click)="filterProjects('non-web')">Non-Web Projects</button>
     </div>
 
     <div class="portfolio-grid">
@@ -48,10 +48,14 @@
                   <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
               } @else {
-                <button class="demo-btn disabled" disabled>
+                <button class="demo-btn disabled" (click)="showNoDemoMessage()">
                   <i class="fas fa-ban"></i> Demo Unavailable
                 </button>
               }
+            </div>
+            <div class="project-category-tag" [class.web-tag]="project.category === 'web'" 
+                 [class.non-web-tag]="project.category === 'non-web'">
+              <!-- {{ project.category === 'web' ? 'Web Project' : 'Non-Web Project' }} -->
             </div>
           </div>
         </div>

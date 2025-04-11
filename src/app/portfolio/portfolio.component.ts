@@ -2,7 +2,7 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt, faBan, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faBan } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-portfolio',
@@ -16,7 +16,6 @@ export class PortfolioComponent {
   faGithub = faGithub;
   faExternalLink = faExternalLinkAlt;
   faBan = faBan;
-  faLock = faLock;
 
   constructor(private serviceTitle: Title) {
     this.serviceTitle.setTitle('Teddy Kibuthu - Portfolio');
@@ -39,7 +38,7 @@ export class PortfolioComponent {
       github: 'https://github.com/Ted-star7/School-portal',
       demo: 'https://heritageleadershipacademy.vercel.app/',
       category: 'web',
-      technologies: ['TypeScript', 'Angular', 'Material UI','Springboot',  'Java', 'Postgress']
+      technologies: ['TypeScript', 'Angular', 'Material UI', 'Springboot', 'Java', 'Postgress']
     },
     {
       title: 'Inventory Management',
@@ -84,7 +83,7 @@ export class PortfolioComponent {
       github: 'https://github.com/Ted-star7/Smart-Invest',
       demo: null,
       category: 'web',
-      technologies: ['Angular', 'Springboot','Typescript', 'Java', 'Postgress']
+      technologies: ['Angular', 'Springboot', 'Typescript', 'Java', 'Postgress']
     },
     {
       title: 'Haven Bot',
@@ -92,7 +91,7 @@ export class PortfolioComponent {
       image: 'assets/P5.jpg',
       github: 'https://github.com/Ted-star7/Haven-bot',
       demo: null,
-      category: '',
+      category: 'non-web',
       technologies: ['Python', 'Chatbot', 'Webhook', 'Tensorflow']
     },
     {
@@ -101,7 +100,7 @@ export class PortfolioComponent {
       image: 'assets/P5.jpg',
       github: 'https://github.com/Ted-star7/Mind-Haven',
       demo: null,
-      category: '',
+      category: 'web',
       technologies: ['Angular', 'Springboot', 'Typescript', 'Java', 'Postgress']
     },
     {
@@ -119,7 +118,7 @@ export class PortfolioComponent {
       image: 'assets/P5.jpg',
       github: 'https://github.com/Ted-star7/Password-Strength-Checker',
       demo: null,
-      category: 'web',
+      category: 'non-web',
       technologies: ['Java', 'Security']
     },
     {
@@ -128,7 +127,7 @@ export class PortfolioComponent {
       image: 'assets/P5.jpg',
       github: 'https://github.com/Ted-star7/Basic-Calculator-App',
       demo: null,
-      category: 'web',
+      category: 'non-web',
       technologies: ['Java']
     }
   ];
@@ -140,9 +139,8 @@ export class PortfolioComponent {
   }
 
   showNoDemoMessage() {
-    alert('Demo not available for this project.');
+    alert('Demo not available for this project. This could be because:\n\n1. It\'s a non-web application\n2. The demo is currently offline\n3. It\'s a private project\n\nCheck the GitHub repository for more details.');
   }
-
 
   get filteredProjects() {
     if (this.activeFilter === 'all') {
