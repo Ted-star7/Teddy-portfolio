@@ -95,6 +95,20 @@
   background: rgba(248, 250, 252, 0.1);
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .portfolio-nav .nav-links {
+    flex-wrap: wrap;
+  }}
+
 /* Background Section */
 .contact-background {
   background-size: cover;

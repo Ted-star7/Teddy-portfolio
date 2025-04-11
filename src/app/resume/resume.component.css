@@ -29,11 +29,13 @@
   position: relative;
   z-index: 1;
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   background: rgba(26, 26, 46, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 2rem;
+  min-height: 100vh;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -272,7 +274,13 @@
 @media (max-width: 768px) {
   .resume-content {
     padding: 1.5rem;
+    border-radius: 0;
+    width: 100%;
+    max-width: 1400px;
   }
+
+    
+  
 
   .resume-title {
     font-size: 2rem;
@@ -295,6 +303,7 @@
 @media (max-width: 480px) {
   .resume-content {
     padding: 1rem;
+    border-radius: 0;
   }
 
   .resume-title {
