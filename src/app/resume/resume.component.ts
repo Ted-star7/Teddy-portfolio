@@ -4,11 +4,11 @@ import { Title } from '@angular/platform-browser';
 // import { NgbAccordionModule,  } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-resume',
-  standalone: true,
-  imports: [NgFor, ],
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.css']
+    selector: 'app-resume',
+    standalone: true,
+    imports: [],
+    templateUrl: './resume.component.html',
+    styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
   constructor(private ServiceTitle: Title, private renderer: Renderer2) {

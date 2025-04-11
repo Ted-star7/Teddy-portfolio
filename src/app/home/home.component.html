@@ -1,206 +1,287 @@
-<div class="shadow-sm">
-  <div class="background-section">
-    <div class="bg-custom p-5 rounded">
-      <div class="text-center">
-        <h1 class="display-4">Hi, I'm Teddy Kibuthu</h1>
-        <h3>A Software Developer</h3>
-      </div>
-
-      <!-- Navigation -->
-      <nav class="navbar-expand-md border-bottom mt-3">
-        <div class="container">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a href="home" class="nav-link text-secondary">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="portfolio" class="nav-link text-secondary">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="resume" class="nav-link text-secondary">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact" class="nav-link text-secondary">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Profile Section -->
-      <div class="profile-section d-flex align-items-center mt-5">
-        <div class="profile-image-container">
-          <img
-            src="/assets/profile.jpg"
-            alt="Teddy Kibuthu"
-            class="profile-image"
-          />
-        </div>
-        <div class="profile-details text-white ms-5">
-          <h3 class="mb-3 bounce-in-top">Get To Know</h3>
-          <h2 class="mb-3 slide-in-right">About Teddy Kibuthu</h2>
-          <p>
-            I am a Full Stack Developer with a passion for solving problems by
-            developing scalable web applications that feature clean,
-            user-friendly interfaces. Precision and accuracy drive my work, and
-            I am always eager to learn and grow. When I'm not coding, you'll
-            find me enjoying football as a devoted fan or
-            getting lost in a great novel. With expertise in Angular, Java, and
-            JavaScript, I am excited to collaborate and build something
-            extraordinary together!
-          </p>
-          <br />
-          <button type="button" class="btn btn-primary" (click)="goToContact()">
-            Let's engage
-          </button>
+<div class="home-container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title animate-typing">Hi,I'm Teddy Kibuthu</h1>
+        <h2 class="hero-subtitle animate-fade-in" style="--delay: 0.3s">Full Stack Developer & UI/UX Enthusiast</h2>
+        <div class="hero-buttons animate-fade-in" style="--delay: 0.6s">
+          <a href="/portfolio" class="btn btn-primary pulse-on-hover">Explore My Work</a>
+          <a href="/contact" class="btn btn-outline">Let's Connect</a>
         </div>
       </div>
-
-      <!-- What I Can Do Section -->
-      <div class="what-i-can-do">
-        <h2 class="section-title">What I Can Do</h2>
-
-        <div class="skills-container">
-          <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <div class="skill-item">
-              <span class="skill-title">JavaScript</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="80%"></div>
-              </div>
-              <span class="percentage">80%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Typescript</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="90%"></div>
-              </div>
-              <span class="percentage">90%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Python</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="60%"></div>
-              </div>
-              <span class="percentage">60%</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3>Frameworks/Libraries</h3>
-            <div class="skill-item">
-              <span class="skill-title">Angular</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="90%"></div>
-              </div>
-              <span class="percentage">90%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">React</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="70%"></div>
-              </div>
-              <span class="percentage">70%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Django</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="60%"></div>
-              </div>
-              <span class="percentage">60%</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3>UI/Component Styling Libraries</h3>
-            <div class="skill-item">
-              <span class="skill-title">Bootstrap</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="100%"></div>
-              </div>
-              <span class="percentage">100%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Tailwind</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="80%"></div>
-              </div>
-              <span class="percentage">80%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">CSS</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="100%"></div>
-              </div>
-              <span class="percentage">100%</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3>State Management</h3>
-            <div class="skill-item">
-              <span class="skill-title">NgRx</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="75%"></div>
-              </div>
-              <span class="percentage">75%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Redux</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="95%"></div>
-              </div>
-              <span class="percentage">95%</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3>Databases</h3>
-            <div class="skill-item">
-              <span class="skill-title">MySQL</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="70%"></div>
-              </div>
-              <span class="percentage">70%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Postgres</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="75%"></div>
-              </div>
-              <span class="percentage">75%</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3>Tools & Technologies</h3>
-            <div class="skill-item">
-              <span class="skill-title">Git</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="85%"></div>
-              </div>
-              <span class="percentage">85%</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-title">Figma</span>
-              <div class="progress-bar">
-                <div class="progress" data-target-width="90%"></div>
-              </div>
-              <span class="percentage">90%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Interests Section -->
-      <div class="skill-category interests-section">
-        <h3>Interests</h3>
-        <ul class="interests-list">
-          <li><i class="fas fa-globe"></i>Web3</li>
-          <li><i class="fas fa-robot"></i>Artificial Intelligence</li>
-          <li><i class="fas fa-brain"></i>Machine Learning</li>
-          <li><i class="fas fa-bullhorn"></i>Digital Marketing</li>
-        </ul>
+      <div class="hero-image animate-scale-in">
+        <img src="/assets/profile.jpg" alt="Teddy Kibuthu" class="profile-image floating">
       </div>
     </div>
-  </div>
+    <div class="scroll-indicator bounce">
+      <span>Scroll Down</span>
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="sticky-nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-text="Home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+        <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+        <li><a href="/portfolio" class="nav-link" data-text="Portfolio">Portfolio</a></li>
+        <li><a href="/contact" class="nav-link" data-text="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-header animate-slide-in-left">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text animate-fade-in" style="--delay: 0.2s">
+        <p>I am a passionate Full Stack Developer with expertise in building scalable web applications with clean, intuitive interfaces. My work is driven by precision and a constant desire to learn and grow.</p>
+        <p>When I'm not coding, you'll find me enjoying football as a devoted fan or getting lost in a great novel. I'm always excited to collaborate and build something extraordinary!</p>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>5+ Years</h3>
+            <p>Development Experience</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>20+ Projects</h3>
+            <p>Completed</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-skills animate-fade-in" style="--delay: 0.4s">
+        <div class="skill-tags">
+          <span class="skill-tag">Angular</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">UI/UX</span>
+          <span class="skill-tag">Docker</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="section-header animate-slide-in-left">
+      <h2 class="section-title">My Skills</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="skills-grid">
+      <!-- Programming Languages -->
+      <div class="skill-category animate-fade-in" style="--delay: 0.1s">
+        <h3 class="skill-category-title">
+          <i class="fas fa-code"></i> Programming Languages
+        </h3>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span>90%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 90%" data-value="90"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>TypeScript</span>
+            <span>95%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 95%" data-value="95"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>Python</span>
+            <span>75%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 75%" data-value="75"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="skill-category animate-fade-in" style="--delay: 0.2s">
+        <h3 class="skill-category-title">
+          <i class="fas fa-layer-group"></i> Frameworks
+        </h3>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>Angular</span>
+            <span>95%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 95%" data-value="95"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>React</span>
+            <span>80%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 80%" data-value="80"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>Django</span>
+            <span>70%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 70%" data-value="70"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UI/UX -->
+      <div class="skill-category animate-fade-in" style="--delay: 0.3s">
+        <h3 class="skill-category-title">
+          <i class="fas fa-paint-brush"></i> UI/UX
+        </h3>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>CSS/SCSS</span>
+            <span>90%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 90%" data-value="90"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>Bootstrap</span>
+            <span>95%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 95%" data-value="95"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>Tailwind</span>
+            <span>85%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 85%" data-value="85"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-category animate-fade-in" style="--delay: 0.4s">
+        <h3 class="skill-category-title">
+          <i class="fas fa-database"></i> Databases
+        </h3>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>PostgreSQL</span>
+            <span>85%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 85%" data-value="85"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>MySQL</span>
+            <span>80%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 80%" data-value="80"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-category animate-fade-in" style="--delay: 0.5s">
+        <h3 class="skill-category-title">
+          <i class="fas fa-tools"></i> Tools
+        </h3>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>Git</span>
+            <span>90%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 90%" data-value="90"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>Docker</span>
+            <span>75%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 75%" data-value="75"></div>
+          </div>
+        </div>
+        <div class="skill-meter">
+          <div class="skill-info">
+            <span>Figma</span>
+            <span>85%</span>
+          </div>
+          <div class="meter">
+            <div class="progress" style="width: 85%" data-value="85"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section class="interests-section">
+    <div class="section-header animate-slide-in-left">
+      <h2 class="section-title">My Interests</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="interests-grid">
+      <div class="interest-card animate-fade-in" style="--delay: 0.1s">
+        <div class="interest-icon">
+          <i class="fas fa-cubes"></i>
+        </div>
+        <h3>Web3 Development</h3>
+        <p>Exploring blockchain technologies and decentralized applications.</p>
+      </div>
+      <div class="interest-card animate-fade-in" style="--delay: 0.2s">
+        <div class="interest-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3>AI & ML</h3>
+        <p>Building intelligent systems and machine learning models.</p>
+      </div>
+      <div class="interest-card animate-fade-in" style="--delay: 0.3s">
+        <div class="interest-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Digital Marketing</h3>
+        <p>Strategies for online growth and brand visibility.</p>
+      </div>
+      <div class="interest-card animate-fade-in" style="--delay: 0.4s">
+        <div class="interest-icon">
+          <i class="fas fa-futbol"></i>
+        </div>
+        <h3>Football</h3>
+        <p>Passionate fan and occasional player of the beautiful game.</p>
+      </div>
+    </div>
+  </section>
 </div>

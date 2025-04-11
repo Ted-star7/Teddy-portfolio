@@ -1,116 +1,98 @@
-<div class="background-section">
-  <div class="bg-custom p-5 rounded">
-    <div class="text-center">
-      <h1 class="display-4">Hi, I'm Teddy Kibuthu</h1>
-      <h3>A Software Developer</h3>
-    </div>
+<div class="contact-container">
+  <!-- Background Section -->
+  <div class="contact-background" style="background-image: url('/assets/sunset-blue.jpg')">
+    <div class="background-overlay"></div>
 
-    <!-- -----navigation------ -->
-    <nav class="navbar-expand-md border-bottom mt-3">
-      <div class="container">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a href="" class="nav-link text-secondary">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link text-secondary">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link text-secondary">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link text-secondary">Contact</a>
-          </li>
+     <div class="hero-section">
+    <div class="hero-content text-center">
+      <h1 class="hero-title">Hi, I'm Teddy Kibuthu</h1>
+      <h2 class="hero-subtitle">Full Stack Developer & UI/UX Enthusiast</h2>
+      
+      <!-- Navigation -->
+      <nav class="portfolio-nav">
+        <ul class="nav-links">
+          <li><a href="home" class="nav-link ">Home</a></li>
+          <li><a href="portfolio" class="nav-link ">Portfolio</a></li>
+          <li><a href="resume" class="nav-link">Resume</a></li>
+          <li><a href="contact active" class="nav-link">Contact</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
+  </div>
+    
+    <!-- Main Content -->
+    <div class="contact-content">
+      <!-- Header Section -->
+      <header class="contact-header animate-slide-down">
+        <h1 class="contact-title">Get In Touch</h1>
+        <h2 class="contact-subtitle">Let's build something amazing together</h2>
+      </header>
 
-    <!-- Contact Section -->
-    <div class="contact-section">
-      <div class="container">
-        <div class="row">
-          <!-- Get in Touch Icons -->
-          <div class="col-md-6">
-            <h2 class="mb-4">Get in Touch</h2>
-            <div class="contact-icons">
-              <div class="contact-icon-box">
-                <i class="bi bi-telephone-fill"></i>
-                <p>Call me</p>
-                <a href="tel:+254705171490">Call me, Let's engage.</a>
-              </div>
-              <div class="contact-icon-box">
+      <!-- Contact Content -->
+      <div class="contact-body">
+        <!-- Contact Information -->
+        <div class="contact-info animate-fade-in" style="--delay: 0.3s">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Me</h3>
+            <a href="mailto:teddykibuthu26@gmail.com">teddykibuthu26gmail.com</a>
+          </div>
+          
+          <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Call Me</h3>
+            <a href="tel:+254705171490">+254 705 171 490</a>
+          </div>
+
+           <div class="contact-card">
                 <i class="bi bi-whatsapp"></i>
                 <p>Whatsapp</p>
                 <a href="https://wa.me/+254705171490">Reach me on Whatsapp</a>
               </div>
-              <div class="contact-icon-box">
+              <div class="contact-card">
                 <i class="bi bi-github"></i>
                 <p>GitHub</p>
                 <a href="https://github.com/Ted-star7">GitHub Profile</a>
               </div>
-              <div class="contact-icon-box">
+              <div class="contact-card">
                 <i class="bi bi-linkedin"></i>
                 <p>LinkedIn</p>
                 <a href="https://www.linkedin.com/in/teddy-kibuthu-926959287">LinkedIn Profile</a>
               </div>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="col-md-6">
-            <h2 class="mb-4">Contact Me</h2>
-            <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
-              <div class="form-group mb-3">
-                <label for="fullName">Full Name</label>
-                <input
-                  type="text"
-                  class="form-control rounded"
-                  id="fullName"
-                  name="fullName"
-                  ngModel
-                  placeholder="Your Full Name"
-                  required
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  class="form-control rounded"
-                  id="email"
-                  name="email"
-                  ngModel
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="phoneNumber">Phone Number</label>
-                <input
-                  type="tel"
-                  class="form-control rounded"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  ngModel
-                  placeholder="Your Phone Number"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="message">Your Message</label>
-                <textarea
-                  class="form-control rounded"
-                  id="message"
-                  name="message"
-                  ngModel
-                  rows="4"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-custom">Send Message</button>
-            </form>
-          </div>
+          
+          <!-- <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Location</h3>
+            <p>Nairobi, Kenya</p>
+          </div> -->
         </div>
+
+        <!-- Contact Form -->
+        <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)" class="contact-form animate-fade-in" style="--delay: 0.5s">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" ngModel required class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" ngModel required class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number (Optional)</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" ngModel class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" ngModel required class="form-control" rows="5"></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn" [disabled]="contactForm.invalid">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
       </div>
     </div>
   </div>

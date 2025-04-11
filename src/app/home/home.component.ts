@@ -53,4 +53,22 @@ export class HomeComponent implements AfterViewInit {
       skillsSection.classList.add('slide-in-left');
     }
   }
+ 
+
+  // setupTypingAnimation() {
+  //   const typingElement = document.querySelector('.hero-title');
+  //   if (typingElement) {
+  //     const text = typingElement.textContent || '';
+  //     typingElement.innerHTML = '';
+  //     typingElement.classList.add('typing-animation');
+  //     typingElement.style.width = '0';
+  //     typingElement.style.display = 'inline-block';
+  //     typingElement.style.whiteSpace = 'nowrap';
+
+  //     setTimeout(() => {
+  //       typingElement.style.width = '100%';
+  //       typingElement.textContent = text;
+  //     }, 100);
+  //   }
+  // }
 }

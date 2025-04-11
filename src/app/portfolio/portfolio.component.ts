@@ -1,14 +1,13 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt, faBan } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faBan, faLock } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [NgFor,],
+  imports: [NgFor],
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css']
 })
@@ -17,6 +16,7 @@ export class PortfolioComponent {
   faGithub = faGithub;
   faExternalLink = faExternalLinkAlt;
   faBan = faBan;
+  faLock = faLock;
 
   constructor(private serviceTitle: Title) {
     this.serviceTitle.setTitle('Teddy Kibuthu - Portfolio');
@@ -24,58 +24,112 @@ export class PortfolioComponent {
 
   projects = [
     {
-      title: 'Smart Invest',
-      description: 'A comprehensive investment platform with portfolio tracking, market analysis, and automated investment strategies.',
-      image: 'assets/Smartinvest.png',
-      github: 'https://github.com/Ted-star7/InvestmentWeb',
-      demo: 'https://demo.com/project1',
-      category: 'web',
-      technologies: ['Angular', 'Node.js', 'MongoDB', 'AWS']
-    },
-    {
-      title: 'Architecture Website',
-      description: 'Modern UI/UX design for an architecture firm featuring 3D model integration and virtual tours.',
-      image: 'assets/Architecture.png',
-      github: 'https://github.com/teddy/project2',
-      demo: 'https://www.figma.com/proto/iBLJlrDX6D1p46sSA2iq6q/Architecture?node-id=2-153&node-type=canvas&t=2qL4i6q6OtavswH0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
-      category: 'ui',
-      technologies: ['Figma', 'Three.js', 'GSAP']
-    },
-    {
-      title: 'School Admin Portal',
-      description: 'A School Portal to automate work with student management, attendance tracking, and grade reporting.',
-      image: 'assets/School Portal.png',
-      github: 'https://github.com/Ted-star7/School-portal',
-      demo: 'https://heritageschoolleadership.vercel.app/',
-      category: 'web',
-      technologies: ['React', 'Firebase', 'Material UI']
-    },
-    {
-      title: 'Token Resell',
-      description: 'A secure and scalable token-based solutions platform with blockchain integration.',
-      image: 'assets/Token.png',
-      github: 'https://github.com/Ted-star7/Token-resell',
-      demo: 'https://token-resell.vercel.app/',
-      category: 'web',
-      technologies: ['Next.js', 'Solidity', 'Web3.js']
-    },
-    {
-      title: 'Inventory Management System',
-      description: 'A comprehensive inventory system for managing products, stocks, and supply chain operations.',
-      image: 'assets/Inventory.png',
-      github: 'https://github.com/Ted-star7/Inventory-Management',
-      demo: 'https://inventory-management-hazel-five.vercel.app/',
-      category: 'web',
-      technologies: ['Vue.js', 'Express', 'PostgreSQL']
-    },
-    {
-      title: 'MindHaven - Mental Health',
-      description: 'A mental health support platform providing resources, AI-driven chatbot, and journaling features.',
+      title: 'MindHaven',
+      description: 'Mental health platform with resources and support features',
       image: 'assets/Mental-health.png',
       github: 'https://github.com/Ted-star7/MindHaven',
       demo: 'https://mind-haven-nine.vercel.app/',
       category: 'web',
-      technologies: ['React', 'Node.js', 'TensorFlow.js']
+      technologies: ['Angular', 'Springboot', 'Typescript', 'Java', 'Postgress']
+    },
+    {
+      title: 'School Portal',
+      description: 'School management system with student tracking and administrative features.',
+      image: 'assets/School Portal.png',
+      github: 'https://github.com/Ted-star7/School-portal',
+      demo: 'https://heritageleadershipacademy.vercel.app/',
+      category: 'web',
+      technologies: ['TypeScript', 'Angular', 'Material UI','Springboot',  'Java', 'Postgress']
+    },
+    {
+      title: 'Inventory Management',
+      description: 'Comprehensive system for tracking and managing inventory.',
+      image: 'assets/Inventory.png',
+      github: 'https://github.com/Ted-star7/Inventory-Management',
+      demo: 'https://inventory-management-hazel-five.vercel.app/',
+      category: 'web',
+      technologies: ['TypeScript', 'Angular', 'Springboot', 'Java']
+    },
+    {
+      title: 'Token Resell Platform',
+      description: 'Platform for token-based transactions and reselling.',
+      image: 'assets/Token.png',
+      github: 'https://github.com/Ted-star7/Token-resell',
+      demo: 'https://token-resell.vercel.app/',
+      category: 'web',
+      technologies: ['HTML', 'JavaScript']
+    },
+    {
+      title: 'Crowne Estates',
+      description: 'Real estate platform for property management and listings.',
+      image: 'assets/Crowne Estates.png',
+      github: 'https://github.com/Ted-star7/Crowne-Estates',
+      demo: 'https://www.crowneestates.co.ke/',
+      category: 'web',
+      technologies: ['Angular', 'Springboot', 'Typescript', 'Java', 'Postgress']
+    },
+    {
+      title: 'Estate Admin',
+      description: 'A TypeScript-based administration system for property management.',
+      image: 'assets/Estate Admin.png',
+      github: 'https://github.com/Ted-star7',
+      demo: null,
+      category: 'web',
+      technologies: ['Angular', 'Springboot', 'Typescript', 'Java', 'Postgress']
+    },
+    {
+      title: 'Smart Invest',
+      description: 'Investment platform with portfolio tracking and market analysis.',
+      image: 'assets/Smartinvest.png',
+      github: 'https://github.com/Ted-star7/Smart-Invest',
+      demo: null,
+      category: 'web',
+      technologies: ['Angular', 'Springboot','Typescript', 'Java', 'Postgress']
+    },
+    {
+      title: 'Haven Bot',
+      description: 'A Python-based chatbot application designed to provide interactive experiences.',
+      image: 'assets/P5.jpg',
+      github: 'https://github.com/Ted-star7/Haven-bot',
+      demo: null,
+      category: '',
+      technologies: ['Python', 'Chatbot', 'Webhook', 'Tensorflow']
+    },
+    {
+      title: 'Mind Haven',
+      description: 'A mental health support platform .',
+      image: 'assets/P5.jpg',
+      github: 'https://github.com/Ted-star7/Mind-Haven',
+      demo: null,
+      category: '',
+      technologies: ['Angular', 'Springboot', 'Typescript', 'Java', 'Postgress']
+    },
+    {
+      title: '3D Web Experience',
+      description: 'Interactive 3D web application showcasing modern web capabilities.',
+      image: 'assets/P5.jpg',
+      github: 'https://github.com/Ted-star7/3D-Web',
+      demo: null,
+      category: 'web',
+      technologies: ['HTML', 'Three.js', '3D']
+    },
+    {
+      title: 'Password Strength Checker',
+      description: 'Java application that evaluates and reports on password security strength.',
+      image: 'assets/P5.jpg',
+      github: 'https://github.com/Ted-star7/Password-Strength-Checker',
+      demo: null,
+      category: 'web',
+      technologies: ['Java', 'Security']
+    },
+    {
+      title: 'Basic Calculator App',
+      description: 'Simple calculator application built with Java.',
+      image: 'assets/P5.jpg',
+      github: 'https://github.com/Ted-star7/Basic-Calculator-App',
+      demo: null,
+      category: 'web',
+      technologies: ['Java']
     }
   ];
 
@@ -84,6 +138,11 @@ export class PortfolioComponent {
   filterProjects(category: string) {
     this.activeFilter = category;
   }
+
+  showNoDemoMessage() {
+    alert('Demo not available for this project.');
+  }
+
 
   get filteredProjects() {
     if (this.activeFilter === 'all') {
