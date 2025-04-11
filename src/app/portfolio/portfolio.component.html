@@ -1,55 +1,57 @@
-<div class="shadow-sm">
-  <div class="background-section">
-    <div class="bg-custom p-5 rounded">
-      <div class="text-center">
-        <h1 class="display-4">Hi, I'm Teddy Kibuthu</h1>
-        <h3>A Software Developer</h3>
-      </div>
-
+<div class="portfolio-container">
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-content text-center">
+      <h1 class="hero-title">Hi, I'm Teddy Kibuthu</h1>
+      <h2 class="hero-subtitle">Full Stack Developer & UI/UX Enthusiast</h2>
+      
       <!-- Navigation -->
-      <nav class="navbar-expand-md border-bottom mt-3">
-        <div class="container">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a href="home" class="nav-link text-secondary font-weight: 600">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="portfolio" class="nav-link text-secondary">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="resume" class="nav-link text-secondary">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact" class="nav-link text-secondary">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="portfolio-nav">
+        <ul class="nav-links">
+          <li><a href="home" class="nav-link active">Home</a></li>
+          <li><a href="portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="resume" class="nav-link">Resume</a></li>
+          <li><a href="contact" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
     </div>
+  </div>
 
-    <!-- Portfolio Cards Section -->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-4 mb-4" *ngFor="let project of projects">
-          <div class="card portfolio-card bounce-in-top">
-            <img
-              src="{{project.image}}"
-              class="card-img-top"
-              alt="Project Image" height="256px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">{{project.title}}</h5>
-              <p class="card-text">
-                {{project.description}}
-              </p>
-              <div class="d-flex justify-content-between">
-                <a href="{{project.github}}" class="btn btn-outline-light"
-                  >GitHub</a
-                >
-                <a href="{{project.demo}}" class="btn btn-outline-primary"
-                  >Demo</a
-                >
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid-container">
+    <div class="filter-options">
+      <button class="filter-btn active" (click)="filterProjects('all')">All Projects</button>
+      <button class="filter-btn" (click)="filterProjects('web')">Web Applications</button>
+      <button class="filter-btn" (click)="filterProjects('ui')">UI/UX Designs</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item" *ngFor="let project of filteredProjects">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img [src]="project.image" [alt]="project.title + ' screenshot'" class="project-image">
+            <div class="project-overlay">
+              <div class="tech-stack">
+                <span *ngFor="let tech of project.technologies" class="tech-badge">{{tech}}</span>
               </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">{{project.title}}</h3>
+            <p class="project-description">{{project.description}}</p>
+            <div class="project-actions">
+              <a [href]="project.github" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i> Code
+              </a>
+              @if (project.demo) {
+                <a [href]="project.demo" target="_blank" class="demo-btn">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              } @else {
+                <button class="demo-btn disabled" disabled>
+                  <i class="fas fa-ban"></i> Demo Unavailable
+                </button>
+              }
             </div>
           </div>
         </div>
