@@ -70,7 +70,7 @@ export class PortfolioComponent {
     },
     {
       title: 'Estate Admin',
-      description: 'A TypeScript-based administration system for property management.',
+      description: 'An administration system for property management.',
       image: 'assets/Estate Admin.png',
       github: 'https://github.com/Ted-star7',
       demo: null,
